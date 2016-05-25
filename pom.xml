@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example.maven.scopes</groupId>
+  <artifactId>com.example.maven.scopes</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>com.example.maven.scopes</name>
+  <description>Test transitive scope
+</description>
+  <modules>
+  	<module>com.example.maven.scopes.module-with-provided-dep</module>
+  	<module>com.example.maven.scopes.module-depepends-on-module-with-provided</module>
+  	<module>com.example.maven.scopes.module-with-runtime-dep</module>
+  	<module>
+  		com.example.maven.scopes.module-depepends-on-module-with-runtime
+  	</module>
+  	<module>com.example.maven.scopes.app</module>
+  	<module>com.example.maven.scopes.module-with-system-dep</module>
+  	<module>
+  		com.example.maven.scopes.module-depepends-on-module-with-system
+  	</module>
+  </modules>
+</project>
