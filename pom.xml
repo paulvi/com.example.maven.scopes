@@ -5,8 +5,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>com.example.maven.scopes</name>
-  <description>Test transitive scope
-</description>
   <modules>
   	<module>com.example.maven.scopes.module-with-provided-dep</module>
   	<module>com.example.maven.scopes.module-depepends-on-module-with-provided</module>
@@ -14,10 +12,10 @@
   	<module>
   		com.example.maven.scopes.module-depepends-on-module-with-runtime
   	</module>
-  	<module>com.example.maven.scopes.app</module>
   	<module>com.example.maven.scopes.module-with-system-dep</module>
   	<module>
   		com.example.maven.scopes.module-depepends-on-module-with-system
   	</module>
+  	<module>com.example.maven.scopes.app</module>
   </modules>
 </project>
